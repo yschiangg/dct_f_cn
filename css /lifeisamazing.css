@@ -1,0 +1,58 @@
+h1 {
+  text-shadow: 0px 0vw 0px rgba(0, 0, 0, 0),
+      0px 0vw 0px rgba(255, 255, 255, 0);
+
+  -webkit-transition: margin 0.6s ease, height 1s ease, transform 0.6s ease,
+      text-shadow 0.6s ease;
+  transition: margin 0.6s ease, height 1s ease, transform 0.6s ease,
+      text-shadow 0.6s ease;
+  cursor: pointer;
+}
+
+div:hover h1 {
+  text-shadow: 0px 3vh 0px white, 0px 6vh 0px rgba(0, 0, 0, 50);
+
+  height: 50vw;
+  transform: translateY(-3vh);
+  z-index: -1;
+}
+
+a {
+  font-size: 3em;
+  line-height: 1em;
+  text-shadow: 0px 0vw 0px rgba(0, 0, 0, 0),
+      0px 0vw 0px rgba(255, 255, 255, 0);
+
+  -webkit-transition: margin 0.6s ease, height 1s ease, transform 0.6s ease,
+      text-shadow 0.6s ease;
+  transition: margin 0.6s ease, height 1s ease, transform 0.6s ease,
+      text-shadow 0.6s ease;
+  cursor: pointer;
+
+  
+}
+
+a:hover {
+  text-shadow: 0px 0vh 0px white, 0px 2vh 20px rgba(0, 0, 0, 50);
+
+  height: 50vw;
+  transform: translateY(-3vh);
+  z-index: -1;
+}
+
+
+div p {
+  color: white;
+  opacity: 1;
+}
+
+
+
+.title {
+  color: transparent;
+  background: url("https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/jakub-gorajek-133561-unsplash.jpg?alt=media&token=75a70bd5-c848-44a5-bf3d-6cd20968d72e")
+      repeat;
+  background-position: 70% 20%;
+  background-size: 400vh;
+  -webkit-background-clip: text;
+}

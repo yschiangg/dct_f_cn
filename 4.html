@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+
+<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
+	 <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/burgercss.css">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="bk">
+	<div>
+		<!-- Navigation -->
+		<div class="b-nav">
+			<div class="b-nav">
+				<li><a class="b-link" href="0.html" target="_self">首頁</a></li>
+				<li><a class="b-link" href="about cn.html" target="_self">關於</a></li>
+				<li><a class="b-link" href="credits cn.html" target="_self">致謝</a></li>
+			</div>
+		</div>
+		<!-- Burger-Icon -->
+		<div class="b-container">
+			<div class="b-menu">
+				<div class="b-bun b-bun--top"></div>
+				<div class="b-bun b-bun--mid"></div>
+				<div class="b-bun b-bun--bottom"></div>
+			</div>
+			<!-- Burger-Brand -->
+			<a href="#" class="b-brand"></a>
+		</div>
+	</div>
+
+	<div class="all">
+		<div class="fullscreen-bg ">
+			<img id="bgImg" source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/patrick-tomasso-110970-unsplash.jpg?alt=media&token=c352b547-95c4-4515-8c5a-63934e06010c"
+			 style="width : 100%;">
+		</div>
+		<div class="row  nav" onmouseover="document.images['bgImg'].src='https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/5.gif?alt=media&token=621a21b1-0480-4b6a-ad8e-58585c806212'">
+		</div>
+
+		<div class="row mnbody">
+			<div class="col-xs-12 col-s-12 col-md-3" onmouseover="document.images['bgImg'].src='https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/5.gif?alt=media&token=621a21b1-0480-4b6a-ad8e-58585c806212'"></div>
+			<div class="col-xs-12 col-s-12 col-md-6 ">
+				<div class="row justify-content-start">
+					<div class="mdd karla fntw" style="padding-top:200px;">
+						<div class="col align-self-center ">
+							<span id="typedtext" class="vipointer"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-s-12 col-md-3">
+				<div class="row justify-content-center">
+					<div class="col fntw align-self-center ">
+						<section class="slides-nav">
+							<nav class="slides-nav__nav">
+								<button class="slides-nav__prev " onclick="window.location.href='3.html'">Prev</button>
+								<button class="slides-nav__next " onclick="window.location.href='5.html'">Next</button>
+							</nav>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/burgerjs.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/typed.min.js"></script>
+
+		<script>
+			var typed = new Typed("#typedtext", {
+				strings: ['但我總困惑，不知道該往何去走，<br>這樣真的沒問題嗎？'],
+				typeSpeed: 80,
+				backSpeed: 20,
+				//fadeOut: true,
+				loop: true
+			});
+		</script>
+
+</body>
+
+
+</html>

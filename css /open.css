@@ -1,0 +1,45 @@
+<a href="#" class="open title" style="font-size: 3em;">life is amazing</a>
+<p>All can be fine.</p>
+
+
+a {
+  text-decoration: none;
+  text-shadow: 
+      0px 0vw 0px rgba(0, 0, 0, 0),
+      0px 0vw 0px rgba(255, 255, 255, 0);
+
+  -webkit-transition: margin 0.6s ease, height 1s ease, transform 0.6s ease,
+      text-shadow 0.6s ease;
+  transition: margin 0.6s ease, height 1s ease, transform 0.6s ease,
+      text-shadow 0.6s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  text-shadow: 
+    0px 5vw 0px white, 
+    0px 10vw 0px rgba(0, 0, 0, 50);
+  height: 50vw;
+  transform: translateY(-15vw);
+  z-index: -1;
+}
+
+.open2 {
+  color: white;
+  opacity: 1;
+}
+
+.open2:hover {
+  transform: scale(0.25);
+  opacity: 0;
+}
+
+.title {
+  color: transparent;
+  background: url("https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      repeat;
+  background-position: 70% 20%;
+  background-size: 400vh;
+  -webkit-background-clip: text;
+}

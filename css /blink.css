@@ -1,0 +1,64 @@
+.underline {
+  margin-bottom:-20px;
+  border-bottom: 2px solid #cdd0d4;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.hide:hover {
+    opacity: 1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: none;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100 {
+    opacity: 1;
+  }
+}
+
+.blink {
+  background: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.blink {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: blink;
+}
+.blink:hover {
+  font-style: italic;
+  text-decoration: underline;
+  opacity: 1;
+  -webkit-animation-name: none;
+  /* should be set to 100% opacity as soon as the mouse enters the box; when the mouse exits the box, the original animation should resume. */
+}
+
+img{
+    //filter: hue-rotate(150deg);
+}

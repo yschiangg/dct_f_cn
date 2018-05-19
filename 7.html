@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/burgercss.css">
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div>
+				<!-- Navigation -->
+				<div class="b-nav">
+					<li><a class="b-link" href="0.html" target="_self">首頁</a></li>
+					<li><a class="b-link" href="about cn.html" target="_self">關於</a></li>
+					<li><a class="b-link" href="credits cn.html" target="_self">致謝</a></li>
+				</div>
+
+				<!-- Burger-Icon -->
+					<div class="b-container">
+					  <div class="b-menu">
+					    <div class="b-bun b-bun--top"></div>
+					    <div class="b-bun b-bun--mid"></div>
+					    <div class="b-bun b-bun--bottom"></div>
+					  </div>
+					  <!-- Burger-Brand -->
+					  <a href="#" class="b-brand"></a>
+					</div>
+				</div>
+
+		<div class="all pointer" onclick="togglePlay() ">
+			<div class="fullscreen-bg ">
+				<video id="vid" class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/lonelycosmos-dct.appspot.com/o/Vids%2Foh%20no.mp4?alt=media&token=9ce10595-4f21-45b0-ab91-b35ac62706b8" type="video/mp4">Your browser does not support HTML5 video.</video>
+			</div>
+			<div class = "row  nav ">
+			</div>
+
+			<div class = "row mnbody">
+				<div class="col-xs-12 col-s-12 col-md-3 "></div>
+				<div class="col-xs-12 col-s-12 col-md-6 ">
+					<div class= "mdd ">
+					<div class = "fntw karla" style = "padding-top:200px;" >
+						 <span id="typedtext"></span>
+					</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-s-12 col-md-3">
+					<div class="row justify-content-center">
+						<div class = "col fntw align-self-center ">
+							<section class="slides-nav">
+								<nav class="slides-nav__nav">
+								  <button class="slides-nav__prev js-prev" onclick="window.location.href='6.html'">Prev</button>
+								  <button class="slides-nav__next js-next" onclick="window.location.href='7-1.html'">Next</button>
+								</nav>
+							  </section>						
+						</div>
+					</div>				
+				</div>		
+		</div>
+
+		<script src="js/burgerjs.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/typed.min.js"></script>
+		<script src="js/play.js"></script>
+
+
+		<script>
+			var typed = new Typed("#typedtext", {
+				strings: ['然後啊，旅途中遇到了許多人<br>有些是過客，有些成了摯友。'],
+				typeSpeed: 80,
+				backSpeed: 20,
+				loop: true
+			});
+
+		</script>
+	</body>
+
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/starcss.css">
+		<link rel="stylesheet" type="text/css" href="css/burgercss.css">
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+
+	<body class="bk">
+		<div>
+				<!-- Navigation -->
+				<div class="b-nav">
+					<li><a class="b-link" href="0.html" target="_self">首頁</a></li>
+					<li><a class="b-link" href="about cn.html" target="_self">關於</a></li>
+					<li><a class="b-link" href="credits cn.html" target="_self">致謝</a></li>
+				</div>
+
+				<!-- Burger-Icon -->
+					<div class="b-container">
+					  <div class="b-menu">
+					    <div class="b-bun b-bun--top"></div>
+					    <div class="b-bun b-bun--mid"></div>
+					    <div class="b-bun b-bun--bottom"></div>
+					  </div>
+					  <!-- Burger-Brand -->
+					  <a href="#" class="b-brand"></a>
+					</div>
+				</div>
+
+		<div class="all">
+			<div class="fullscreen-bg ">
+				<img source src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/II2.gif?alt=media&token=e74bba7d-b0f7-4f2a-bf9e-b8d6c134a53e" style ="width : 100%;"> 
+			</div>
+			<div class = "row  nav ">
+			</div>
+
+			<div class = "row mnbody">
+				<div class="col-xs-12 col-s-12 col-md-3 "></div>
+				<div class="col-xs-12 col-s-12 col-md-6 ">
+					<div class="row justify-content-start">
+						<div class= "mdd break-word">
+							<p class = "fntw karla" style = "padding-top:200px;" id="typedtext" ></p>
+						</div>
+						<div class="col align-self-center " >
+
+								<div  style="text-align:center;" >
+									<div >
+										<span class = "verla huge glow fntw" id="question">?</span>
+										<h4 class="karla" style="font-size:12pt;position:absolute;margin-left: 14vw;" id="questext"></h4>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-s-12 col-md-3">
+					<div class="row justify-content-center">
+						<div class = "col fntw align-self-center ">
+							<section class="slides-nav">
+								<nav class="slides-nav__nav">
+								  <button class="slides-nav__prev " onclick="window.location.href='1.html'">Prev</button>
+								  <button class="slides-nav__next " onclick="window.location.href='3.html'">Next</button>
+								</nav>
+							  </section>						
+						</div>
+					</div>				
+				</div>		
+		</div>
+
+		<script src="js/burgerjs.js"></script>
+		<script src="js/trailcursor.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/typed.min.js"></script>
+
+		<script>
+		</script>
+		<script>
+			$(document).ready(function(){
+	//$('[data-toggle="tooltip"]').tooltip();
+	$('#question').hover(function(){
+		
+		$("#questext").append('<div id="text" style="text-align:center;">“你想做什麼？”<br>“你又想要往哪裡走？”<br><br>大部分的時候，其實我也不知道答案。</div>')
+	},function(){
+		$("#text").remove();
+	});
+});
+		</script>
+	</body>
+
+
+</html>

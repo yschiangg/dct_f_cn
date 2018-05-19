@@ -1,0 +1,13 @@
+.A{
+    color:white;
+    text-decoration: underline;
+}
+
+.A:hover{
+    font-style: italic;
+    color:white;
+}
+
+.A:visited{
+    color:white;
+}
