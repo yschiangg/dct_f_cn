@@ -31,11 +31,9 @@
 		</div>
 	</div>
 
-	<div class="all" onclick="playVid()">
+	<div class="all" onclick="togglePlay();">
 		<div class="fullscreen-bg ">
-			<video muted id="bgVideo" class="fullscreen-bg__video">
-				<source src="https://firebasestorage.googleapis.com/v0/b/lonelycosmos-dct.appspot.com/o/Vids%2Ff.mp4?alt=media&token=90a5bc1c-2c78-4634-907e-c88f2a31b88f"
-				 type="video/mp4">Your browser does not support HTML5 video.</video>
+			<video id="vid" style="width:100%;" class = "fullscreen-bg__video"><source src="https://firebasestorage.googleapis.com/v0/b/lonelycosmos-dct.appspot.com/o/Vids%2Ff.mp4?alt=media&token=90a5bc1c-2c78-4634-907e-c88f2a31b88f" type="video/mp4">Your browser does not support HTML5 video.</video>
 		</div>
 		<div class="row  nav "></div>
 
@@ -68,6 +66,8 @@
 		<script src="js/burgerjs.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/typed.min.js"></script>
+		<script src="js/play.js"></script>
+
 
 		<script>
 			var typed = new Typed("#typedtext", {
@@ -78,12 +78,7 @@
 			 });
 		</script>
 
-		<script>
-			var vid = document.getElementById("bgVideo");
-			function playVid() {
-				vid.play();
-			} 
-		</script>
+
 </body>
 
 
